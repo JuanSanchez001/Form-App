@@ -1,3 +1,10 @@
 h1{
 	text-align: center;
 }
+
+h2{
+	font-family: roman;
+}
+.form-check{
+	margin-left: 200px;
+}
