@@ -28,29 +28,35 @@
 <br>
 
 
-<div class="form-check form-check-inline">
-  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Option 1
-  <label class="form-check-label" for="radio1"></label>
-</div>
-<div class="form-check form-check-inline">
-  <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Option 2
-  <label class="form-check-label" for="radio2"></label>
-</div>
-<div class="form-check form-check-inline">
-  <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">Option 3
-  <label class="form-check-label"></label>
-</div>
-</div>
-<br>
-<br>
-
-
-
 
 	<div class="container mt-3">
+
   <h2> Please choose what type of password you'd like below </h2>
   <form action="/t">
-    <div class="mb-3 mt-3">
+   <br>
+   <br>
+   <div class="mb-3 mt-3">
+   <label for="Length">Length:</label>
+
+<div class="mb-3 mt-3">
+
+<div class="form-check form-check-inline">
+  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Short" checked> Short Password (5-12 Characters)
+  <label class="form-check-label" for="radio1"></label>
+</div>
+</div>
+
+<br>
+<div class="mb-3">
+
+	<div class="form-check form-check-inline">
+  <input type="radio" class="form-check-input" id="radio1" name="optradio" value="Long" checked>Long Password(12-25 Characters)
+  <label class="form-check-label" for="radio1"></label>
+</div>
+</div>
+<br>
+
+   <div class="mb-3 mt-3">
       <label for="Preference">Preference:</label>
       <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search..." name="preferences">
 	  <datalist id="datalistOptions">
@@ -62,8 +68,8 @@
 </datalist>
     </div>
     <div class="mb-3">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+      <label for="clr">Favorite Color:</label>
+      <input type="password" class="form-control" id="clr" placeholder="Enter a Color" name="color">
     </div>
     <div class="form-check mb-3">
       <label class="form-check-label">

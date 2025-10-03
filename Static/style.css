@@ -1,10 +1,21 @@
+body{
+	background-color: Gainsboro !important;
+}
+
 h1{
-	text-align: center;
+	color: Royalblue;
+	margin-left: 70px;
 }
 
 h2{
 	font-family: roman;
 }
-.form-check{
-	margin-left: 200px;
+*/
+  
+.container mt-3{
+width: 320px;
+  height: 50px;
+  padding: 10px;
+  border: 5px solid gray;
+  margin-left: 50%;
 }
