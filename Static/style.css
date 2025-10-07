@@ -2,15 +2,19 @@ body{
 	background-color: Gainsboro !important;
 }
 
+p{
+	color: black;
+}
+
 h1{
 	color: Royalblue;
-	margin-left: 70px;
+	margin-left: 120px;
 }
 
 h2{
 	font-family: roman;
 }
-*/
+
   
 .container mt-3{
 width: 320px;
