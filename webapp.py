@@ -9,21 +9,20 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    return render_template('response.html')
-    #optradio = request.args['optradio']
+    n = int(request.args['multNum'])
+    reply3 = "3 / " + str(n) + " = " + str((3/n))
+    return render_template('response.html', response3 = reply3)
+    
+if __name__=="__main__":
+    app.run(debug=True)
+#https://www.w3schools.com/python/ref_random_seed.asp##response1 = reply1 response2 = reply2, ,z #optradio = request.args['optradio']
    # if optradio == 'Short':
     #    reply1 = "Amazing Choice!"
     #else: 
     #    reply1 = "test"
       
-    preferences = request.args['preferences']
-    if preferences == 'Dog':
-        reply2 = "test1"
-    else:
-        reply2 = "test2"
-    n = int(request.args['multNum'])
-    reply3 = "3 / " + str(n) + " = " + str((3/n))
-    return render_template('response.html',  response2 = reply2, response3 = reply3)
-if __name__=="__main__":
-    app.run(debug=False)
-#https://www.w3schools.com/python/ref_random_seed.asp##response1 = reply1,z
+    #preferences = request.args['preferences']
+   # if preferences == 'Dog':
+    #    reply2 = "test1"
+    #else:
+    #    reply2 = "test2"
