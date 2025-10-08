@@ -2,19 +2,14 @@ body{
 	background-color: Gainsboro !important;
 }
 
-p{
-	color: black;
-}
-
 h1{
 	color: Royalblue;
-	margin-left: 120px;
-	
 }
 
-p{
-	font-family: roman;
-	margin-left: 120px;
+#h12{
+	color: Royalblue;
+	text-align: center; 
+	margin-top: 25px;	
 }
 
 #p1{
@@ -23,17 +18,6 @@ p{
   height: 50px;
   padding: 10px;
   border: 5px solid gray;
-  position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-}
-
-  
-.container mt-3{
-width: 320px;
-  height: 50px;
-  padding: 10px;
-  border: 5px solid gray;
-  margin-left: 50%;
-}
+ text-align: center;
+ margin: auto;
+ margin-top: 50px;

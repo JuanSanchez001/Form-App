@@ -12,22 +12,19 @@ def render_main():
 def render_response():
     preferences = request.args['preferences']
     if preferences == 'Dog':
-      replylist1 = ['OPT', 'POT', 'TOP']
+      replylist1 = ['fluffy1$2@', 'p@w$#*', 't0pD0gCru!$!ng','f!r3d0gr3ady^*', 'art!cfur#2#4#6@!', 'd0gw!+hW!ngs!@#', 'b3@$td0gg0@', 'm@y$3@$0n@ld0gs', 'c0pd0gg0@@!']
       reply2 = (random.choice(replylist1))
     else:
-      replylist2 = ['abc', 'Abc', 'ABC']
+      replylist2 = ['c@+v!d30$#', 'c@+n!pcr@zy*', 'w!ldc@+p@r+y@','@ttitud3catw^8', 'c@t+theLa$+@irbend3r', 'cr@zy+w!ldc@t', 'h@ppyc@+unk0wn#&', 'my$+ic@lcA+!', 'hungry@rmyC@+$^#']
       reply2 = (random.choice(replylist2))
+   
     n = int(request.args['num'])
-    reply3 = str((3*n))
-    return render_template('response.html', response2 = reply2, response3 = reply3) #r=reply2 + reply3#)
+    reply3 = str((n/3))
+    return render_template('response.html', response2 = reply2, response3 = reply3) 
+    
     
 if __name__=="__main__":
     app.run(debug=True)
-#https://www.w3schools.com/python/ref_random_seed.asp##response1 = reply1 response2 = reply2, ,z #optradio = request.args['optradio']
-   # if optradio == 'Short':
-    #    reply1 = "Amazing Choice!"
-    #else: 
-    #    reply1 = "test"
-   # https://www.w3schools.com/python/ref_func_len.asp
-      
+#https://www.w3schools.com/python/ref_random_seed.as  *used for random*
+
    
