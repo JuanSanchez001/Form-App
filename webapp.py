@@ -1,4 +1,5 @@
 from flask import Flask, url_for, render_template, request
+import random
 
 
 app = Flask(__name__) #__name__ = "__main__" if this is the file that was run.  Otherwise, it is the name of the file (ex. webapp)
@@ -9,9 +10,16 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    n = int(request.args['multNum'])
-    reply3 = "3 / " + str(n) + " = " + str((3/n))
-    return render_template('response.html', response3 = reply3)
+    preferences = request.args['preferences']
+    if preferences == 'Dog':
+      replylist1 = ['OPT', 'POT', 'TOP']
+      reply2 = (random.choice(replylist1))
+    else:
+      replylist2 = ['abc', 'Abc', 'ABC']
+      reply2 = (random.choice(replylist2))
+    n = int(request.args['num'])
+    reply3 = str((3*n))
+    return render_template('response.html', response2 = reply2, response3 = reply3) #r=reply2 + reply3#)
     
 if __name__=="__main__":
     app.run(debug=True)
@@ -20,9 +28,6 @@ if __name__=="__main__":
     #    reply1 = "Amazing Choice!"
     #else: 
     #    reply1 = "test"
+   # https://www.w3schools.com/python/ref_func_len.asp
       
-    #preferences = request.args['preferences']
-   # if preferences == 'Dog':
-    #    reply2 = "test1"
-    #else:
-    #    reply2 = "test2"
+   
